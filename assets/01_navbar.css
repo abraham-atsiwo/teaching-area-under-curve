@@ -1,0 +1,15 @@
+.navbar-container {
+    display: flex;
+    min-height: 60px;
+    width: 100%;
+    justify-content: space-between;
+    /* border-style: solid; */
+    border-radius: 3px 3px;
+    box-shadow: 2px 2px;
+}
+
+.navbar-item {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+}
