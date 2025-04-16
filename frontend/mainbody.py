@@ -62,7 +62,7 @@ def sidebar(chidren: List = 1):
                 dbc.Label("enter function:", html_for="comment-box", className="mb-2"),
                 dbc.Textarea(
                     id="function_box",
-                    placeholder="enter your function here ...",
+                    placeholder="enter your function here. Example: y = x^2",
                     style={"width": "100%", "maxHeight": "50px"},
                 ),
             ],
