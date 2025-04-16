@@ -3,6 +3,7 @@ import dash_bootstrap_components as dbc
 import dash_ag_grid as dag
 import dash.html as html
 import dash.dcc as dcc
+import os 
 
 
 from frontend import navbar, mainbody
@@ -33,11 +34,13 @@ def main_callback(app):
     navbar_callback(app)
 
 
-def main(app):
+def main(app, port):
     main_layout(app)
     main_callback(app)
-    return app.run(debug=False)
+    return app.run(debug=False, port=port)
 
 
 if __name__ == "__main__":
-    main(app=app)
+    port = int(os.environ.get("PORT", 8050))
+    # print(port)
+    main(app=app, port=port)
