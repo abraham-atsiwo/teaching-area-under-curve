@@ -39,5 +39,5 @@ def main(app):
     app.run(debug=False)
 
 
-if __name__ == "__main__":
-    main(app=app)
+# if __name__ == "__main__":
+main(app=app)
