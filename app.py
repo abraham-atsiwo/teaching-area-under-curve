@@ -14,6 +14,8 @@ app = Dash(
     external_stylesheets=[dbc.themes.BOOTSTRAP],
 )
 
+server = app.server 
+
 
 def main_layout(app: Dash) -> Dash:
     app.layout = html.Div(
@@ -34,7 +36,7 @@ def main_callback(app):
 def main(app):
     main_layout(app)
     main_callback(app)
-    app.run(debug=True)
+    app.run(debug=False)
 
 
 if __name__ == "__main__":
