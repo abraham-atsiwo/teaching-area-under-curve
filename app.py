@@ -36,8 +36,8 @@ def main_callback(app):
 def main(app):
     main_layout(app)
     main_callback(app)
-    app.run(debug=False)
+    return app.run(debug=False)
 
 
-# if __name__ == "__main__":
-main(app=app)
+if __name__ == "__main__":
+    main(app=app)
